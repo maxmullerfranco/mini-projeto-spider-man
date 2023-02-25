@@ -14,6 +14,7 @@ body::before{
   position: absolute;
   opacity: 0.2;
   object-fit: contain;
+  transition: 0.6s ease-in-out;
 
 }
 
@@ -44,6 +45,7 @@ body::before{
   width: calc(100%/3 - 8%);
   height: 70vh;
   position: relative;
+  transition: filter .5s ease-in-out;
 }
 .s_card_background{
   width: 100%;
@@ -67,6 +69,7 @@ body::before{
   position: absolute;
   width: 100%;
   bottom: 0;
+  transition: bottom 1s ease-in-out;
 }
 
 .s-controller{
@@ -113,10 +116,33 @@ body::before{
 
 .s-card--hovered .s_card_background{
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0;
 }
 
 .s-card--hovered .s-card_image{
   transform: scale(1.5);
+  filter: drop-shadow(30px 10px 4px rgba(0,0,0,.5));
   
+}
+
+body#spider-man-01-hovered::before{
+  background-image: url(background/fundo_mary.jpg);
+}
+
+body#spider-man-02-hovered::before{
+  background-image: url(background/fudo-com-todos.jpg);
+}
+
+body#spider-man-03-hovered::before{
+  background-image: url(background/o-espetacular-homem-aranha-3-2.jpg);
+}
+ 
+body[id^="spider-man-"]::before{
+  opacity: 1;
+}
+body[id^="spider-man-"] .s-card:not(.s-card--hovered){
+  filter: grayscale(100%);
+}
+.s-card--hovered .s-card_title{
+  bottom: 30%;
 }
