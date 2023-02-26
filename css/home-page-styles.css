@@ -126,15 +126,15 @@ body::before{
 }
 
 body#spider-man-01-hovered::before{
-  background-image: url(background/fundo_mary.jpg);
+  background-image: url(background/tobey.jpg);
 }
 
 body#spider-man-02-hovered::before{
-  background-image: url(background/fudo-com-todos.jpg);
+  background-image: url(background/tom.jpg);
 }
 
 body#spider-man-03-hovered::before{
-  background-image: url(background/o-espetacular-homem-aranha-3-2.jpg);
+  background-image: url(background/andrew.jpg);
 }
  
 body[id^="spider-man-"]::before{
@@ -144,5 +144,5 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered){
   filter: grayscale(100%);
 }
 .s-card--hovered .s-card_title{
-  bottom: 30%;
+  bottom: 80%;
 }
