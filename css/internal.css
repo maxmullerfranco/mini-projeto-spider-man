@@ -12,6 +12,12 @@
   background-color: red;
 }
 
+.s-wrapper video{
+  position: fixed;
+  width: 100%;
+
+}
+
 .s-wrapper .s-left-colum{
   width: 100px;
   height: 100%;
@@ -30,6 +36,8 @@
   width: auto;
   background:rgba(0,0,0,.5);
   padding-left: 130px;
+  position: relative;
+
 }
 
 .s-wrapper .s-main-content_top{
@@ -84,5 +92,15 @@
 
 .s-spiderman-01-01{
   background-image: url(../css/img_spider_1/film-1/background-1.png);
+  background-size: cover;
+}
+
+.s-spiderman-01-02{
+  background-image: url(../css/img_spider_1/film-2/background-2.png);
+  background-size: cover;
+}
+
+.s-spiderman-01-03{
+  background-image: url(../css/img_spider_1/film-3/background.png);
   background-size: cover;
 }

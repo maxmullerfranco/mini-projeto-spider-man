@@ -1,6 +1,7 @@
 .gallery{
   padding:20px;
   padding-left: 0;
+  
 }
 
 .gallery ul{
@@ -14,6 +15,7 @@
 
 .gallery ul li:first-child{
   margin-left: 0px;
+  background:rgba(0,0,0,.5);
 }
 
 .gallery ul li a img{
